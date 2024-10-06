@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encabezado Dinámico con Imágenes</title>
+    <meta property="og:title" content="Protesta Social - ¡Levanta tu voz!" />
+    <meta property="og:description" content="Únete al movimiento por el cambio. Descubre cómo puedes hacer una diferencia." />
+    <meta property="og:image" content="https://img.freepik.com/vector-premium/cartel-protesta-puno-levantado-protesta_152098-9.jpg" />
+    <meta property="og:url" content="https://www.tupagina.com/protesta" />
+    <meta property="og:type" content="website" />
+    
+    <!-- Etiquetas Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Protesta Social - ¡Levanta tu voz!" />
+    <meta name="twitter:description" content="Únete al movimiento por el cambio. Descubre cómo puedes hacer una diferencia." />
+    <meta name="twitter:image" content="https://img.freepik.com/vector-premium/cartel-protesta-puno-levantado-protesta_152098-9.jpg" />
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -94,6 +106,38 @@
           text-align: center;
           margin-bottom: 20px;
         }
+        .image-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .share-buttons {
+            margin-top: 20px;
+            margin: auto;
+        }
+        .share-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #1da1f2; /* Color para Twitter */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .share-button.facebook {
+            background-color: #4267B2;
+        }
+        .share-button:hover {
+            opacity: 0.8;
+        }
+        .share-button.instagram {
+            background-color: #E1306C; /* Instagram no tiene botón de compartir directo */
+        }
     </style>
 </head>
 <body>
@@ -123,7 +167,29 @@
 <h1>Noticia importante</h1>
 <div class="noticia-cuerpo">
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum corporis voluptas, magni repellendus esse ullam...</p>
+    <div class="image-container">
+    <!-- Imagen con atributos alt y title para SEO -->
+    <img src="https://img.freepik.com/vector-premium/cartel-protesta-puno-levantado-protesta_152098-9.jpg"
+         alt="Cartel de protesta con un puño levantado"
+         title="Cartel de protesta con un puño levantado en símbolo de resistencia y cambio">
+         <div class="share-buttons">
+    <!-- Botón de Twitter -->
+    <a class="share-button twitter" 
+       href="https://twitter.com/intent/tweet?text=Únete+al+movimiento+por+el+cambio&url=https://www.tupagina.com/protesta&hashtags=protesta,socialcambio"
+       target="_blank">
+       Compartir en Twitter
+    </a>
+
+    <!-- Botón de Facebook -->
+    <a class="share-button facebook" 
+       href="https://www.facebook.com/sharer/sharer.php?u=https://www.tupagina.com/protesta" 
+       target="_blank">
+       Compartir en Facebook
+    </a>
 </div>
+</div>
+</div>
+
 
 <script>
     // Array con las noticias y las imágenes correspondientes
